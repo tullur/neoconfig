@@ -14,6 +14,9 @@ set mouse=a
 set tabstop=2
 set shiftwidth=2
 
+" Converting tabs to spaces
+set expandtab
+
 lua require('core.plugins')
 lua require('core.mappings')
 

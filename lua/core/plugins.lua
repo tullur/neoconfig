@@ -7,24 +7,24 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-	-- Vim plugins 
-	use 'morhetz/gruvbox'
-	use 'tpope/vim-commentary'
-	
-	use 'preservim/nerdtree'
- 	use 'ryanoasis/vim-devicons'
+  -- Vim plugins 
+  use 'morhetz/gruvbox'
+  use 'tpope/vim-commentary'
+  
+  use 'preservim/nerdtree'
+  use 'ryanoasis/vim-devicons'
 
-	use 'hrsh7th/vim-vsnip'
-	use 'hrsh7th/nvim-compe'
-	use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/nvim-compe'
+  use 'neovim/nvim-lspconfig'
 
-	use 'nvim-lua/popup.nvim'
-	use 'nvim-lua/plenary.nvim'
-	use 'nvim-telescope/telescope.nvim'
+  use 'nvim-lua/popup.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-telescope/telescope.nvim'
 
-	use 'hoob3rt/lualine.nvim' 
-	use { 
-		'TimUntersberger/neogit', 
-		requires = 'nvim-lua/plenary.nvim' 
-	}
+  use 'hoob3rt/lualine.nvim' 
+  use { 
+    'TimUntersberger/neogit', 
+    requires = 'nvim-lua/plenary.nvim' 
+  }
 end)
