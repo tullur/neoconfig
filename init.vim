@@ -19,6 +19,7 @@ set expandtab
 
 lua require('core.plugins')
 lua require('core.mappings')
+lua require('core.initialize')
 
 set termguicolors
 set background=dark

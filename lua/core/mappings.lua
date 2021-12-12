@@ -8,38 +8,35 @@ global.mapleader = ','
 -- map alias
 local map = utils.map 
 
--- Defx Toggle
--- map { 'n', '<C-n>', ':Defx<Return>' }
+-- File tree
+map { 'n', '<C-n>', ':NvimTreeToggle<CR>' }
+map { 'n', 'nf', ':NvimTreeFindFile<CR>' }
 
--- NERDTree
-map { 'n', '<C-n>', ':NERDTreeToggle<CR>' }
-map { 'n', 'nf', ':NERDTreeFind<CR>' }
-
--- nmap ,<Space> :noh<CR>
+-- Search highlight
+map { 'n', ',<Space>', ':noh<cr>' }
 
 -- Tabs
 map { 'n', 'te', ':tabedit<CR>' }
-map { 'n', '<Tab>', ':tabnext<Return>' }
-map { 'n', '<S-Tab>', ':tabprev<Return>' }
+map { 'n', '<Tab>', ':BufferLineCycleNext<Return>' }
+map { 'n', '<S-Tab>', ':BufferLineCyclePrev<Return>' }
 
--- nmap ss :split<Return><C-w>w
--- nmap sv :vsplit<Return><C-w>w
+-- Screen
+map { 'n', 'ss', ':split<Return><C-w>w' }
+map { 'n', 'sv', ':vsplit<Return><C-w>w' }
 
--- nmap <Space> <C-w>w
+map { 'n', 's<up>', '<C-w>k' }
+map { 'n', 's<down>', '<C-w>j' }
+map { 'n', 's<left>', '<C-w>h' }
+map { 'n', 's<right>', '<C-w>l' }
 
--- map s<up> <C-w>k
--- map s<down> <C-w>j
+map { 'n', 'sh', '<C-w>h' }
+map { 'n', 'sk', '<C-w>k' }
+map { 'n', 'sj', '<C-w>j' }
+map { 'n', 'sl', '<C-w>l' } 
 
--- map s<left> <C-w>h
--- map s<right> <C-w>l
+-- Resize
+map { 'n', '<C-w><up>', '<C-w>+' }
+map { 'n', '<C-w><down>', '<C-w>-' }
 
--- map sh <C-w>h
--- map sk <C-w>k
--- map sj <C-w>j
--- map sl <C-w>l
-
--- nmap <C-w><up> <C-w>+
--- nmap <C-w><down> <C-w>-
-
--- nmap <C-w><left> <C-w><
--- nmap <C-w><right> <C-w>>
+map { 'n', '<C-w><left>', '<C-w><' }
+map { 'n', '<C-w><right>', '<C-w>>' }
