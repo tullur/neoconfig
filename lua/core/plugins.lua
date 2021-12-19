@@ -9,11 +9,20 @@ return require('packer').startup(function()
 
   -- Vim plugins 
   use 'morhetz/gruvbox'
-  use 'hrsh7th/vim-vsnip'
 
-  use 'hrsh7th/nvim-compe'
+  -- use 'hrsh7th/nvim-compe'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  
   use 'neovim/nvim-lspconfig'
 
+  -- For luasnip users.
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
@@ -50,5 +59,6 @@ return require('packer').startup(function()
     },
   }
 
-  use { 'akinsho/toggleterm.nvim' }
+  use 'akinsho/toggleterm.nvim'
+  use 'windwp/nvim-autopairs'
 end)

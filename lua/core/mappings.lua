@@ -34,6 +34,8 @@ map { 'n', 'sk', '<C-w>k' }
 map { 'n', 'sj', '<C-w>j' }
 map { 'n', 'sl', '<C-w>l' } 
 
+map { 'n', '<Space>', '<C-w>w' }
+
 -- Resize
 map { 'n', '<C-w><up>', '<C-w>+' }
 map { 'n', '<C-w><down>', '<C-w>-' }

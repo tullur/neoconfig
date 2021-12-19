@@ -2,3 +2,4 @@
 require('Comment').setup{}
 require('bufferline').setup{}
 require('toggleterm').setup{}
+require('nvim-autopairs').setup{}
