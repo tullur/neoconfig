@@ -9,7 +9,8 @@ return require('packer').startup(function()
 
   -- Vim plugins 
   use 'morhetz/gruvbox'
-
+  use 'cocopon/iceberg.vim'
+  use 'lifepillar/vim-solarized8'
   -- use 'hrsh7th/nvim-compe'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -61,4 +62,10 @@ return require('packer').startup(function()
 
   use 'akinsho/toggleterm.nvim'
   use 'windwp/nvim-autopairs'
+  
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ":TSUpdate",
+  }
 end)

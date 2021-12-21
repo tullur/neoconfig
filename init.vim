@@ -25,5 +25,4 @@ lua require('core.cmp')
 set termguicolors
 set background=dark
 
-colorscheme gruvbox
-
+colorscheme iceberg 
