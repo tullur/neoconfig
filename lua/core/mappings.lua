@@ -19,6 +19,7 @@ map { 'n', ',<Space>', ':noh<cr>' }
 map { 'n', 'te', ':tabedit<CR>' }
 map { 'n', '<Tab>', ':BufferLineCycleNext<Return>' }
 map { 'n', '<S-Tab>', ':BufferLineCyclePrev<Return>' }
+map { 'n', 'tx', ':BufferLinePickClose<CR>' }
 
 -- Screen
 map { 'n', 'ss', ':split<Return><C-w>w' }

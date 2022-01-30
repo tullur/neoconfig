@@ -4,10 +4,11 @@ if (not status) then return end
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = 'iceberg',
-    section_separators = {'', ''},
-		component_separators = {'|', '|'},
-    disabled_filetypes = {}
+    theme = 'auto',
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
+    disabled_filetypes = {},
+    always_divide_middle = true,
   },
   sections = {
     lualine_a = {'mode'},

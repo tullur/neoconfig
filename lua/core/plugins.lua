@@ -6,12 +6,14 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
-  -- Vim plugins 
+  
+  -- Color schemes
   use 'morhetz/gruvbox'
+  use 'catppuccin/nvim'
   use 'cocopon/iceberg.vim'
   use 'lifepillar/vim-solarized8'
-  -- use 'hrsh7th/nvim-compe'
+
+  -- Vim plugins 
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
@@ -28,13 +30,7 @@ return require('packer').startup(function()
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
 
-  use 'hoob3rt/lualine.nvim' 
   use 'numToStr/Comment.nvim'
-
-  use { 
-    'TimUntersberger/neogit', 
-    requires = 'nvim-lua/plenary.nvim' 
-  }
 
   use 'lukas-reineke/indent-blankline.nvim' 
 
@@ -53,13 +49,6 @@ return require('packer').startup(function()
     end
   }
 
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    },
-  }
-
   use 'akinsho/toggleterm.nvim'
   use 'windwp/nvim-autopairs'
   
@@ -68,4 +57,21 @@ return require('packer').startup(function()
     'nvim-treesitter/nvim-treesitter',
     run = ":TSUpdate",
   }
+
+  -- Statusline
+  use 'hoob3rt/lualine.nvim' 
+  
+  -- File explorer
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+  }
+
+  -- Git Integration
+  use 'mhinz/vim-signify'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
+  use 'junegunn/gv.vim'
 end)
