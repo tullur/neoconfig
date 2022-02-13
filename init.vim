@@ -21,6 +21,7 @@ lua require('core.plugins')
 lua require('core.mappings')
 lua require('core.initialize')
 lua require('core.cmp')
+lua require('options')
 
 set termguicolors
 set background=dark
