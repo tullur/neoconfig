@@ -23,8 +23,17 @@ opt.termguicolors = true
 
 opt.background = 'dark'
 
+opt.completeopt = {'menuone', 'noinsert', 'noselect'}  -- Completion options (for deoplete)
+
+-- opt.cmdheight = 2 
+-- opt.updatetime = 300
+
+opt.splitbelow = true               -- Put new windows below current
+opt.splitright = true               -- Put new windows right of current
+
 cmd 'colorscheme solarized8'
 cmd 'syntax enable'
+cmd 'filetype plugin indent on'
 
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]] -- remove newline auto commenting
 

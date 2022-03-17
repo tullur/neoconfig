@@ -3,8 +3,13 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- Colorschemes
-  use 'lifepillar/vim-solarized8'
-  use {'dracula/vim', as = 'dracula'}
+  use { 'lifepillar/vim-solarized8', as = 'solarized' }
+  use { 'dracula/vim', as = 'dracula'}
+
+  use 'cocopon/iceberg.vim'
+
+  -- LSP
+  use 'neovim/nvim-lspconfig'
 
   -- Status line
   use 'nvim-lualine/lualine.nvim'
@@ -17,6 +22,7 @@ return require('packer').startup(function()
 
   -- Navigation
   use 'preservim/tagbar'
+
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
