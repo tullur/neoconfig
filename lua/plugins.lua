@@ -6,8 +6,6 @@ return require('packer').startup(function()
   use { 'lifepillar/vim-solarized8', as = 'solarized' }
   use { 'dracula/vim', as = 'dracula'}
 
-  use 'cocopon/iceberg.vim'
-
   -- LSP
   use 'neovim/nvim-lspconfig'
 
